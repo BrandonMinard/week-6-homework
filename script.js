@@ -24,6 +24,7 @@ if (!recentSearches) {
 searchBtn.addEventListener("click", function (event) {
     event.preventDefault();
     query = searchBar.value;
+    searchBar.value = ""
     console.log(query);
     queryAPIAndDoEverything(query);
 });
@@ -31,6 +32,8 @@ searchBtn.addEventListener("click", function (event) {
 //grab query from recent search button click
 search.addEventListener("click", function (event) {
     event.preventDefault();
+    searchBar.value = ""
+
     queryAPIAndDoEverything(event.target.dataset.name);
 
 })
