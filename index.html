@@ -21,13 +21,15 @@
         <div class="row">
             <div class="col-3 search">
                 <p><strong>Search for a city:</strong></p>
-                <input type="text" name="citySearch">
-                <button type="button" class="btn btn-primary">🔎</button>
+                <input type="text" name="citySearch" id="searchBar">
+                <button type="button" class="btn btn-primary" id="search-button">🔎</button>
+                <div class="recentSearches"></div>
+                <!-- <p class="recentSearch data-something">thing</p> -->
             </div>
             <div class="col-9">
                 <div class="today">
                     <h2 class="cityAndDay">today's forecast</h2>
-                    <p>Temperature: <span class="todayTemp"></span> F°</p>
+                    <p>Temperature: <span class="todayTemp"></span></p>
                     <p>humidity: <span class="todayHumidity"></span></p>
                     <p>wind speed: <span class="todayWindspeed"></span></p>
                     <p>UV index: <span class="todayUV"> </span></p>
@@ -36,39 +38,34 @@
                     <h3>5 day forecast:</h3>
                 </div>
                 <div class="row">
-                    <div class="card bg-light mb-3" style="max-width: 17%;">
-                        <div class="card-header">Header</div>
+                    <div class="card bg-light mb-3 day2" style="max-width: 17%;">
+                        <div class="card-header day2Header"></div>
                         <div class="card-body">
-                            <p class="card-text">Sunny</p>
-                            <p class="card-text">Day</p>
+                            <p class="card-text day2Text"></p>
                         </div>
                     </div>
-                    <div class="card bg-light mb-3" style="max-width: 17%;">
-                        <div class="card-header">Header</div>
+                    <div class="card bg-light mb-3 day3" style="max-width: 17%;">
+                        <div class="card-header day3Header"></div>
                         <div class="card-body">
-                            <h5 class="card-title">Light</h5>
-                            <p class="card-text">Some</p>
+                            <p class="card-text day3Text"></p>
                         </div>
                     </div>
-                    <div class="card bg-light mb-3" style="max-width: 17%;">
-                        <div class="card-header">Header</div>
+                    <div class="card bg-light mb-3 day4" style="max-width: 17%;">
+                        <div class="card-header day4Header"></div>
                         <div class="card-body">
-                            <h5 class="card-title">Light</h5>
-                            <p class="card-text">Some</p>
+                            <p class="card-text day4Text"></p>
                         </div>
                     </div>
-                    <div class="card bg-light mb-3" style="max-width: 17%;">
-                        <div class="card-header">Header</div>
+                    <div class="card bg-light mb-3 day5" style="max-width: 17%;">
+                        <div class="card-header day5Header"></div>
                         <div class="card-body">
-                            <h5 class="card-title">Light </h5>
-                            <p class="card-text">Some </p>
+                            <p class="card-text day5Text"></p>
                         </div>
                     </div>
-                    <div class="card bg-light mb-3" style="max-width: 17%;">
-                        <div class="card-header">Header</div>
+                    <div class="card bg-light mb-3 day6" style="max-width: 17%;">
+                        <div class="card-header day6Header"></div>
                         <div class="card-body">
-                            <h5 class="card-title">Light</h5>
-                            <p class="card-text">Some</p>
+                            <p class="card-text day6Text"></p>
                         </div>
                     </div>
 
@@ -81,6 +78,8 @@
     </div>
 
     </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script> -->
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -89,6 +88,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
     <script src="./script.js"></script>
 </body>
 
